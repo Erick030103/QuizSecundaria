@@ -2,6 +2,11 @@
   --principal: rgba(87,41,126,1);
   --principal2: rgba(253,29,29,1);
   --principal3:rgba(252,176,69,1);
+  --botonprincipal: linear-gradient(90deg, rgba(253,29,29,1) 0%, rgba(252,176,69,1) 100%); ;
+  --bodyprincipal: linear-gradient(90deg, rgba(87,41,126,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%); 
+  --bodyprimero:linear-gradient(90deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+  --bodysegundo:linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+  --bodytercero:linear-gradient(90deg, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
   --secundarioOscuro: rgb(233, 187, 2);
   --blanco: #FFFFFF;
   --negro: #000000;
@@ -22,9 +27,18 @@ html{
 /*Globales*/
 body{
   background: rgb(87,41,126);
-  background: linear-gradient(90deg, rgba(87,41,126,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%); 
+  background: var(--bodyprincipal);
 }
 
+h4{
+  font-size: 1.2rem;
+}
+
+h5{
+  font-size: 3rem;
+}
+
+/* Contenedor */
 .contenedor{
   background-color: var(--blanco);
   border-radius: 2rem;
@@ -35,10 +49,19 @@ body{
   text-align: center;
   font-family: var(--fuentePrincipal);
 }
-.contenedor h1{
+
+@media (min-width: 768px) {
+  .contenedor{
+    margin: 10rem auto;
+    width: 70%;
+  }
+}
+
+/* Pagina Principal */
+.contenedor__titulo{
   font-size: 4.5rem;
 }
-.contenedor h3{
+.contenedor__elegir{
   font-size: 2rem;
   padding-top: 5rem;
   margin-bottom: 7rem;
@@ -51,7 +74,7 @@ body{
   margin-top: 6rem;
 }
 .boton__anio--select{
-  background: linear-gradient(90deg, rgba(253,29,29,1) 0%, rgba(252,176,69,1) 100%); 
+  background: var(--botonprincipal); 
   /*tener que cambiar el color de los botones, este es un color de prueba*/
   font-family: var(--fuentePrincipal);
   font-size: 2rem;
@@ -59,22 +82,6 @@ body{
   padding: 1.5rem 5rem;
   border: none;
 }
-
-h4{
-  font-size: 1.2rem;
-}
-
-h5{
-  font-size: 3rem;
-}
-
-@media (min-width: 768px) {
-  .contenedor{
-    margin: 10rem auto;
-    width: 70%;
-  }
-}
-
 .boton__anio--select:hover{
   color: var(--blanco);
   background: linear-gradient(90deg, rgb(255, 19, 19) 0%, rgb(252, 166, 46) 100%); 
