@@ -32,6 +32,40 @@ body{
   margin: 4.5rem auto;
   width: 96%;
   height:58rem;
+  text-align: center;
+  font-family: var(--fuentePrincipal);
+}
+.contenedor h1{
+  font-size: 4.5rem;
+}
+.contenedor h3{
+  font-size: 2rem;
+  padding-top: 5rem;
+  margin-bottom: 7rem;
+}
+.botones-anios{
+  display: flex;
+  gap: 4rem;
+  justify-content: space-evenly;
+  border-radius: 4rem;
+  margin-top: 6rem;
+}
+.boton__anio--select{
+  background: linear-gradient(90deg, rgba(253,29,29,1) 0%, rgba(252,176,69,1) 100%); 
+  /*tener que cambiar el color de los botones, este es un color de prueba*/
+  font-family: var(--fuentePrincipal);
+  font-size: 2rem;
+  border-radius: 1.5rem;
+  padding: 1.5rem 5rem;
+  border: none;
+}
+
+h4{
+  font-size: 1.2rem;
+}
+
+h5{
+  font-size: 3rem;
 }
 
 @media (min-width: 768px) {
@@ -39,4 +73,9 @@ body{
     margin: 10rem auto;
     width: 70%;
   }
+}
+
+.boton__anio--select:hover{
+  color: var(--blanco);
+  cursor: pointer;
 }
