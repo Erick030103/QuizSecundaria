@@ -87,3 +87,64 @@ h5{
   background: linear-gradient(90deg, rgb(255, 19, 19) 0%, rgb(252, 166, 46) 100%); 
   cursor: pointer;
 }
+
+h1{
+  font-weight: 300;
+  margin: 0px;
+  padding: 10px;
+  font-size: 4rem;  
+  color: var(--negro);
+}
+.question{
+  font-size: 3rem;
+  margin-bottom: 3rem;
+}
+.answers {
+  margin-bottom: 3rem;
+  text-align: left;
+  display: inline-block;
+}
+.answers label{
+  display: block;
+  margin-bottom: 3rem;
+  font-size: 2rem;
+}
+button{
+  font-family: 'Work Sans', sans-serif;
+	font-size: 22px;
+	background: var(--bodyprimero);
+	color: #fff;
+	border: 0px;
+	border-radius: 3px;
+	padding: 20px;
+	margin-bottom: 20px;
+  justify-content: center;
+  z-index: 10;
+}
+button:hover{
+  cursor: pointer;
+}
+
+.slide{
+  position: absolute;
+  left: 0px;
+  top: -39px;
+  width: 100%;
+  height: 34rem;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+.active-slide{
+  opacity: 1;
+  z-index: 2;
+}
+.quiz-container{
+  position: relative;
+  height: 200px;
+  margin: 4rem 0 11rem 0;
+}
+
+#results{
+  font-size: 2rem;
+}
