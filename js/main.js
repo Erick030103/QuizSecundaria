@@ -1,8 +1,6 @@
 'use strict'
 $(document).on('click', '#boton1', function(){
   let primerAnio = '<h1 class="contenedor__titulo">Primer Año de Secundaria</h1>\
-  <h1 class="contenedor__titulo">Segundo Año de secundaria</h1>\
-  <h1>Quiz on Important Facts</h1>\
   <div class="quiz-container">\
     <div id="quiz"></div>\
   </div>\
@@ -434,8 +432,6 @@ $(document).on('click', '#boton1', function(){
 
 $(document).on('click', '#boton2', function(){
   let segundoAnio = '<h1 class="contenedor__titulo">Tercer Año de Secundaria</h1>\
-  <h1 class="contenedor__titulo">Segundo Año de secundaria</h1>\
-  <h1>Quiz on Important Facts</h1>\
   <div class="quiz-container">\
     <div id="quiz"></div>\
   </div>\
@@ -743,7 +739,6 @@ $(document).on('click', '#boton2', function(){
 
 $(document).on('click', '#boton3', function(){
   var tercerAnio = '<h1 class="contenedor__titulo">Tercer Año de Secundaria</h1>\
-  <h1>Quiz on Important Facts</h1>\
   <div class="quiz-container">\
     <div id="quiz"></div>\
   </div>\
@@ -836,7 +831,7 @@ $(document).on('click', '#boton3', function(){
       });
   
       // show number of correct answers out of total
-      resultsContainer.innerHTML = `${numCorrect} out of ${myQuestions.length}`;
+      resultsContainer.innerHTML = `${numCorrect} de ${myQuestions.length}`;
 
     }
   

@@ -11,7 +11,7 @@
   --blanco: #FFFFFF;
   --negro: #000000;
 
-  --fuentePrincipal: 'Staatliches', cursive;
+  --fuentePrincipal: 'Lato', sans-serif;
 }
 
 html{
@@ -28,6 +28,13 @@ html{
 body{
   background: rgb(87,41,126);
   background: var(--bodyprincipal);
+  font-family: var(--fuentePrincipal);
+}
+
+h1{
+  font-weight: bold;
+  margin-bottom: 4rem !important;
+  margin-top: 4rem !important;
 }
 
 h4{
@@ -35,7 +42,7 @@ h4{
 }
 
 h5{
-  font-size: 3rem;
+  font-size: 1rem;
 }
 
 /* Contenedor */
